@@ -1,0 +1,1855 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Aires - Troubleshooting</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <link rel="shortcut icon" href="assets/images/logo.png">
+
+    <!-- Google Font (font-family: 'Open Sans', sans-serif;) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+    <!-- Google Font (font-family: 'PT Serif', serif;) -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+      <style>
+      #map { height: 100%; }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="tm-preloader">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="tm-preloader-logo">
+                        <img src="assets/images/logo/logo-white.png" alt="logo">
+                    </div>
+                    <span class="tm-preloader-progress"></span>
+                </div>
+            </div>
+        </div>
+        <button class="tm-button">Cancelar</button>
+    </div>
+    <!--// Preloader -->
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Header -->
+        <div id="tm-home-area" class="tm-header">
+            <div class="tm-header-topside">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <ul class="tm-header-topside-infoleft">
+                                <li><b><i class="ion-android-mail"></i> Correo: </b><a
+                                        href="mailto:aires.tsh@gmail.com">aires.tsh@gmail.com</a></li>
+                                <li><b><i class="ion-android-call"></i> Contacto: </b><a
+                                        href="tel:+18009156270">2881209736</a></li>
+                                <li><b><i class="ion-clock"></i> Horario: </b>9:00-18:00</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <ul class="tm-header-topside-inforight">
+                                <li><a class="hash-scroll-link" href="#tm-appointment-area"><i
+                                            class="ion-android-calendar"></i> Haga una cita</a></li>
+                                <li><button class="tm-header-searchtrigger"><i
+                                            class="ion-ios-search-strong"></i></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tm-header-bottomside">
+                <div class="container">
+                    <div class="tm-header-bottominner">
+                        <a href="index.html" class="tm-header-logo">
+                            <img src="assets/images/logo/logo.png" alt="aires logo">
+                        </a>
+                        <nav class="tm-header-nav">
+                            <ul>
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="#tm-about-area">Nosotros</a></li>
+                                <li><a href="#tm-services-area">Servicios</a></li>
+                                <li><a href="#tm-products-area">Productos</a></li>
+                               
+                             
+                                <li><a href="#tm-contact-area">Contacto</a></li>
+                            </ul>
+                        </nav>
+                        <ul class="tm-header-icons">
+                            <li><a href="login-register.html"><i class="ion-android-contact"></i></a></li>
+                            <li><a href="cart.html"><i class="ion-android-cart"></i></a></li>
+                        </ul>
+                        <div class="tm-mobilenav"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Header -->
+
+        <!-- Heroslider Area -->
+        <div class="tm-heroslider">
+            <div class="tm-heroslider-images tm-slider-dots-2">
+                <div class="tm-heroslider-image" data-bgimage="assets/images/heroslider/heroslider-image-1.jpg"></div>
+                <div class="tm-heroslider-image" data-bgimage="assets/images/heroslider/heroslider-image-2.jpg"></div>
+                <div class="tm-heroslider-image" data-bgimage="assets/images/heroslider/heroslider-image-3.jpg"></div>
+            </div>
+
+            <div class="tm-heroslider-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-10">
+                            <h1>Especialistas en aires acondicionados y calentadores</h1>
+                            <p>Business plan draws on a wide range of knowledge from many
+                                different business disciplines</p>
+                            <a href="https://play.google.com/store/apps/details?id=aires.tsh.mx" class="tm-button hash-scroll-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="currentColor" d="M48 59.49v393a4.33 4.33 0 0 0 7.37 3.07L260 256L55.37 56.42A4.33 4.33 0 0 0 48 59.49ZM345.8 174L89.22 32.64l-.16-.09c-4.42-2.4-8.62 3.58-5 7.06l201.13 192.32ZM84.08 472.39c-3.64 3.48.56 9.46 5 7.06l.16-.09L345.8 338l-60.61-57.95ZM449.38 231l-71.65-39.46L310.36 256l67.37 64.43L449.38 281c19.49-10.77 19.49-39.23 0-50Z"/></svg>
+                                Aires TS App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--// Heeroslider Area -->
+
+        <!-- Main Content -->
+        <main class="page-content">
+
+            <!-- Features -->
+            <div id="tm-features-area" class="tm-feature-area tm-section bg-grey">
+                <div class="container">
+                    <div class="row mt-30-reverse justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+                            <div class="tm-feature">
+                                <div class="tm-feature-icon">
+                                    <img src="assets/images/icons/icon-feature-1.png" alt="feature icon">
+                                </div>
+                                <div class="tm-feature-content">
+                                    <h5>Instalación</h5>
+                                    <p>Nisi odio soluta rerum officiis perspiciatis cumque.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+                            <div class="tm-feature">
+                                <div class="tm-feature-icon">
+                                    <img src="assets/images/icons/icon-feature-2.png" alt="feature icon">
+                                </div>
+                                <div class="tm-feature-content">
+                                    <h5>Reparación</h5>
+                                    <p>Autem deserunt ab earum ducimus consectetur similique ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+                            <div class="tm-feature">
+                                <div class="tm-feature-icon">
+                                    <img src="assets/images/icons/icon-feature-3.png" alt="feature icon">
+                                </div>
+                                <div class="tm-feature-content">
+                                    <h5>Mantenimiento</h5>
+                                    <p>Quo corrupti pariatur dolor qui quia consectetur eligendi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Features -->
+
+            <!-- About -->
+            <div id="tm-about-area" class="tm-about-area tm-section tm-padding-section bg-white">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="tm-videobox" data-black-overlay="3">
+                                <img src="assets/images/others/videobox-image-1.jpg" alt="videobox image">
+                                <a href="https://www.youtube.com/watch?v=mHUOCxVT5ro" data-fancybox="video">
+                                    <img src="assets/images/icons/icon-video-play.png" alt="video play">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="tm-about-content">
+                                <h2>Acerca de nuestra empresa</h2>
+                                <h6>En Aires Troubleshooting</h6>
+                                <p>Nos enorgullece ser líderes en la industria de instalación y 
+                                    mantenimiento de aires acondicionados. Con años de experiencia y 
+                                    un equipo altamente capacitado, nos hemos ganado la confianza de 
+                                    nuestros clientes al brindar soluciones de climatización excepcionales 
+                                    y servicios de primera clase</p>
+                                <ul class="stylish-list-color">
+                                    <li><i class="ion-android-checkmark-circle"></i>Instalación Profesional</li>
+                                    <li><i class="ion-android-checkmark-circle"></i> Mantenimiento Preventivo y Correctivo</li>
+                                    <li><i class="ion-android-checkmark-circle"></i>Asesoramiento Profesional</li>
+                                </ul>
+                                <div class="tm-about-buttons tm-buttongroup">
+                                    <a href="https://play.google.com/store/apps/details?id=aires.tsh.mx" target="_blank" class="tm-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="currentColor" d="M48 59.49v393a4.33 4.33 0 0 0 7.37 3.07L260 256L55.37 56.42A4.33 4.33 0 0 0 48 59.49ZM345.8 174L89.22 32.64l-.16-.09c-4.42-2.4-8.62 3.58-5 7.06l201.13 192.32ZM84.08 472.39c-3.64 3.48.56 9.46 5 7.06l.16-.09L345.8 338l-60.61-57.95ZM449.38 231l-71.65-39.46L310.36 256l67.37 64.43L449.38 281c19.49-10.77 19.49-39.23 0-50Z"></path></svg>
+                                        Aires TS App
+                                    </a>
+                                    <a href="tel:+18009156270" class="tm-callbutton">
+                                        <img src="assets/images/icons/icon-callbutton-phone.png" alt="call icon">
+                                        <h5>Atención al cliente</h5>
+                                        <h4>2881209736</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center tm-padding-section-top">
+                        <div class="col-lg-6">
+                            <div class="tm-whyus-content">
+                                <h2>Razones por la que somos confiables</h2>
+                                <div class="tm-whyus-blocks">
+                                    <div class="tm-whyus-block">
+                                        <h5><span>1</span> Experiencia Comprobada</h5>
+                                        <p>Hemos demostrado nuestra excelencia a lo largo de años de servicio en la industria, 
+                                            acumulando una sólida reputación basada en la satisfacción del cliente.</p>
+                                    </div>
+                                    <div class="tm-whyus-block">
+                                        <h5><span>2</span> Profesionalismo</h5>
+                                        <p> Nuestro equipo está compuesto por técnicos altamente capacitados y 
+                                            amigables que se esfuerzan por brindar un servicio de calidad y una experiencia sin complicaciones.</p>
+                                    </div>
+                                    <div class="tm-whyus-block">
+                                        <h5><span>3</span> Compromiso con la Calidad</h5>
+                                        <p>Utilizamos equipos y materiales de última generación para garantizar que cada instalación y 
+                                            reparación cumpla con los más altos estándares de calidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="tm-whyus-image">
+                                <img src="assets/images/others/whyus-image.jpg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// About -->
+
+            <!-- Funfact -->
+            <div id="tm-funfact-area" class="tm-funfact-area tm-section tm-padding-section bg-grey">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-12">
+                            <h2 class="tm-funfact-heading"><small>Mas de</small><span>3 años</span> de experiencia
+                            </h2>
+                        </div>
+                        <div class="col-lg-7 col-12">
+                            <div class="row mt-30-reverse justify-content-center">
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-12 mt-30">
+                                    <div class="tm-funfact">
+                                        <div class="tm-funfact-icon">
+                                            <img src="assets/images/icons/icon-funfact-1.png" alt="funfact icon">
+                                        </div>
+                                        <div class="tm-funfact-content">
+                                            <span class="tm-funfact-number">
+                                                <span class="odometer" data-count-to="199"></span>
+                                            </span>
+                                            <h6>Servicios Completados</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-12 mt-30">
+                                    <div class="tm-funfact">
+                                        <div class="tm-funfact-icon">
+                                            <img src="assets/images/icons/icon-funfact-2.png" alt="funfact icon">
+                                        </div>
+                                        <div class="tm-funfact-content">
+                                            <span class="tm-funfact-number">
+                                                <span class="odometer" data-count-to="20"></span>
+                                            </span>
+                                            <h6>Trabajadores Expertos</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-12 mt-30">
+                                    <div class="tm-funfact">
+                                        <div class="tm-funfact-icon">
+                                            <img src="assets/images/icons/icon-funfact-3.png" alt="funfact icon">
+                                        </div>
+                                        <div class="tm-funfact-content">
+                                            <span class="tm-funfact-number">
+                                                <span class="odometer" data-count-to="100"></span>%
+                                            </span>
+                                            <h6>Garantía de servicio</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Funfact -->
+
+            <!-- Services -->
+            <div id="tm-services-area" class="tm-services-area tm-section tm-padding-section bg-white">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="tm-sectiontitle text-center">
+                                <h2>Otros Servicios</h2>
+                                <span class="tm-sectiontitle-divider">
+                                    <img src="assets/images/icons/icon-section-title-divider.png" alt="divider icon">
+                                </span>
+                               <!--- <p>Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad teimpor
+                                    sittem elit inuning ut sed sittem do eiusmod.</p>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-30-reverse">
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+                            <div class="tm-service text-center tm-revealblock">
+                                <div class="tm-service-icon">
+                                    <img src="assets/images/icons/icon-service-1.png" alt="feature icon">
+                                </div>
+                                <div class="tm-service-content">
+                                    <h5>Plomeria</h5>
+                                    <p>Nuestros expertos en plomería están listos para resolver cualquier problema en tu sistema de agua.</p>
+                                    <a href="#" class="tm-button tm-button-white">Solicitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+                            <div class="tm-service text-center tm-revealblock">
+                                <div class="tm-service-icon">
+                                    <img src="assets/images/icons/icon-service-2.png" alt="feature icon">
+                                </div>
+                                <div class="tm-service-content">
+                                    <h5>Jardineria</h5>
+                                    <p>Transformamos tus espacios exteriores en oasis de belleza y serenidad. 
+                                        Nuestros expertos mantendrá tus jardines limpios.</p>
+                                    <a href="#" class="tm-button tm-button-white">Solicitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+                            <div class="tm-service text-center tm-revealblock">
+                                <div class="tm-service-icon">
+                                    <img src="assets/images/icons/icon-service-3.png" alt="feature icon">
+                                </div>
+                                <div class="tm-service-content">
+                                    <h5>Eléctrico</h5>
+                                    <p>Mantenemos tus sistemas eléctricos en pleno funcionamiento y seguros para ti y tu propiedad.</p>
+                                    <a href="#" class="tm-button tm-button-white">Solicitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+                            <div class="tm-service text-center tm-revealblock">
+                                <div class="tm-service-icon">
+                                    <img src="assets/images/icons/icon-service-4.png" alt="feature icon">
+                                </div>
+                                <div class="tm-service-content">
+                                    <h5>Aire Acondicionado</h5>
+                                    <p>Mantén la temperatura perfecta en tu hogar u oficina durante el verano con equipos de alto 
+                                        rendimiento que te mantendrán fresco y cómodo.</p>
+                                    <a href="#" class="tm-button tm-button-white">Solicitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+                            <div class="tm-service text-center tm-revealblock">
+                                <div class="tm-service-icon">
+                                    <img src="assets/images/icons/icon-service-5.png" alt="feature icon">
+                                </div>
+                                <div class="tm-service-content">
+                                    <h5>Calentador</h5>
+                                    <p>Mantén el suministro constante de agua caliente en tu hogar con nuestros 
+                                        servicios de instalación y mantenimiento de calentadores de agua. </p>
+                                    <a href="#" class="tm-button tm-button-white">Solicitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+                            <div class="tm-service text-center tm-revealblock">
+                                <div class="tm-service-icon">
+                                    <img src="assets/images/icons/icon-service-6.png" alt="feature icon">
+                                </div>
+                                <div class="tm-service-content">
+                                    <h5>Gas</h5>
+                                    <p>Nuestro equipo de expertos en instalación y mantenimiento de gas está 
+                                        listo para asegurarse de que tu estufa funcione de manera segura y eficiente.</p>
+                                    <a href="#" class="tm-button tm-button-white">Solicitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Services -->
+
+            <!-- Appointment -->
+            <div id="tm-appointment-area" class="tm-appointment-area tm-section tm-padding-section bg-grey">
+                <div class="tm-appointment-bgimage" data-bgimage="assets/images/others/appointment-image-bg.jpg"></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-8 col-sm-8 col-10 align-self-end">
+                            <div class="tm-appointment-image">
+                                <img src="assets/images/others/appointment-image.png" alt="appointment-image">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="tm-appointment-box">
+                                <h2>Solicitar un servicio</h2>
+                                <!--<p>One of our experts will get back to you soon and answer any questions
+                                    you may have.</p>-->
+                                <form action="assets/php/appointment.php" id="tm-appointment-form"
+                                    class="tm-appointment-form tm-form tm-form-whitebox" method="post">
+                                    <div class="tm-form-inner">
+                                        <div class="tm-form-field tm-form-fieldhalf">
+                                            <input type="text" placeholder="Nombre" name="name">
+                                        </div>
+                                        <div class="tm-form-field tm-form-fieldhalf">
+                                            <input type="text" placeholder="Telefono" name="phone">
+                                        </div>
+                                        <div class="tm-form-field tm-form-fieldhalf">
+                                            <input type="text" placeholder="Dirección" name="address">
+                                        </div>
+                                        <div class="tm-form-field tm-form-fieldhalf">
+                                            <input type="text" placeholder="Date" data-toggle="datepicker" name="date">
+                                        </div>
+                                        <div class="tm-form-field">
+                                            <select name="service">
+                                                <option value="0">Select Service</option>
+                                                <option value="Plumbing">Plumbing</option>
+                                                <option value="Duct Cleaning">Duct Cleaning</option>
+                                                <option value="Quite Operation">Quite Operation</option>
+                                                <option value="Indoor Air Quality">Indoor Air Quality</option>
+                                                <option value="Heating and Cooling">Heating and Cooling</option>
+                                                <option value="Gas Furnaces">Gas Furnaces</option>
+                                            </select>
+                                        </div>
+                                        <div class="tm-form-field">
+                                            <textarea cols="30" rows="5" placeholder="Message"
+                                                name="message"></textarea>
+                                        </div>
+                                        <div class="tm-form-field">
+                                            <button type="submit" class="tm-button">Submit Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <p class="appointment-messages"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Appointment -->
+
+            <!-- Products Area -->
+            <div id="tm-products-area" class="tm-products-area tm-section tm-padding-section bg-white">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="tm-sectiontitle text-center">
+                                <h2>Nuestros Productos</h2>
+                                <span class="tm-sectiontitle-divider">
+                                    <img src="assets/images/icons/icon-section-title-divider.png" alt="divider icon">
+                                </span>
+                                <!--<p>Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad teimpor
+                                    sittem elit inuning ut sed sittem do eiusmod.</p>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row tm-products-slider tm-slider-arrows">
+
+                        <!-- Single Product -->
+                        <div class="col">
+                            <div class="tm-product">
+                                <div class="tm-product-top">
+                                    <img src="assets/images/products/product-image-1.jpg" alt="aires product">
+                                    <ul class="tm-product-actions">
+                                        <li><button data-fancybox data-src="#tm-product-quickview"><i
+                                                    class="ion-eye"></i></button></li>
+                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
+                                        <li><a href="#"><i class="ion-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-product-bottom">
+                                    <h6><a href="product-details.html">Industry air ventilation</a></h6>
+                                    <span class="tm-product-price">$99.99</span>
+                                    <div class="tm-ratingbox">
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star-half"></i></span>
+                                        <span><i class="ion-ios-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Product -->
+
+                        <!-- Single Product -->
+                        <div class="col">
+                            <div class="tm-product">
+                                <div class="tm-product-top">
+                                    <img src="assets/images/products/product-image-2.jpg" alt="aires product">
+                                    <ul class="tm-product-actions">
+                                        <li><button data-fancybox data-src="#tm-product-quickview"><i
+                                                    class="ion-eye"></i></button></li>
+                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
+                                        <li><a href="#"><i class="ion-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-product-bottom">
+                                    <h6><a href="product-details.html">Multimedia alarm device</a></h6>
+                                    <span class="tm-product-price"><ins>$77.55</ins><del>$99.99</del></span>
+                                    <div class="tm-ratingbox">
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span><i class="ion-ios-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Product -->
+
+                        <!-- Single Product -->
+                        <div class="col">
+                            <div class="tm-product">
+                                <div class="tm-product-top">
+                                    <img src="assets/images/products/product-image-3.jpg" alt="aires product">
+                                    <ul class="tm-product-actions">
+                                        <li><button data-fancybox data-src="#tm-product-quickview"><i
+                                                    class="ion-eye"></i></button></li>
+                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
+                                        <li><a href="#"><i class="ion-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-product-bottom">
+                                    <h6><a href="product-details.html">Vacuum cleaner</a></h6>
+                                    <span class="tm-product-price">$65.99</span>
+                                    <div class="tm-ratingbox">
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span><i class="ion-ios-star"></i></span>
+                                        <span><i class="ion-ios-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Product -->
+
+                        <!-- Single Product -->
+                        <div class="col">
+                            <div class="tm-product">
+                                <div class="tm-product-top">
+                                    <img src="assets/images/products/product-image-4.jpg" alt="aires product">
+                                    <ul class="tm-product-actions">
+                                        <li><button data-fancybox data-src="#tm-product-quickview"><i
+                                                    class="ion-eye"></i></button></li>
+                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
+                                        <li><a href="#"><i class="ion-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-product-bottom">
+                                    <h6><a href="product-details.html">Air conditioner heat pump</a></h6>
+                                    <span class="tm-product-price">$11.22</span>
+                                    <div class="tm-ratingbox">
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Product -->
+
+                        <!-- Single Product -->
+                        <div class="col">
+                            <div class="tm-product">
+                                <div class="tm-product-top">
+                                    <img src="assets/images/products/product-image-1.jpg" alt="aires product">
+                                    <ul class="tm-product-actions">
+                                        <li><button data-fancybox data-src="#tm-product-quickview"><i
+                                                    class="ion-eye"></i></button></li>
+                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
+                                        <li><a href="#"><i class="ion-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-product-bottom">
+                                    <h6><a href="product-details.html">Industry air ventilation</a></h6>
+                                    <span class="tm-product-price">$99.99</span>
+                                    <div class="tm-ratingbox">
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star-half"></i></span>
+                                        <span><i class="ion-ios-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Product -->
+
+                        <!-- Single Product -->
+                        <div class="col">
+                            <div class="tm-product">
+                                <div class="tm-product-top">
+                                    <img src="assets/images/products/product-image-2.jpg" alt="aires product">
+                                    <ul class="tm-product-actions">
+                                        <li><button data-fancybox data-src="#tm-product-quickview"><i
+                                                    class="ion-eye"></i></button></li>
+                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
+                                        <li><a href="#"><i class="ion-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-product-bottom">
+                                    <h6><a href="product-details.html">Multimedia alarm device</a></h6>
+                                    <span class="tm-product-price"><ins>$77.55</ins><del>$99.99</del></span>
+                                    <div class="tm-ratingbox">
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span><i class="ion-ios-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Product -->
+
+                        <!-- Single Product -->
+                        <div class="col">
+                            <div class="tm-product">
+                                <div class="tm-product-top">
+                                    <img src="assets/images/products/product-image-3.jpg" alt="aires product">
+                                    <ul class="tm-product-actions">
+                                        <li><button data-fancybox data-src="#tm-product-quickview"><i
+                                                    class="ion-eye"></i></button></li>
+                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
+                                        <li><a href="#"><i class="ion-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-product-bottom">
+                                    <h6><a href="product-details.html">Vacuum cleaner</a></h6>
+                                    <span class="tm-product-price">$65.99</span>
+                                    <div class="tm-ratingbox">
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span><i class="ion-ios-star"></i></span>
+                                        <span><i class="ion-ios-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Product -->
+
+                        <!-- Single Product -->
+                        <div class="col">
+                            <div class="tm-product">
+                                <div class="tm-product-top">
+                                    <img src="assets/images/products/product-image-4.jpg" alt="aires product">
+                                    <ul class="tm-product-actions">
+                                        <li><button data-fancybox data-src="#tm-product-quickview"><i
+                                                    class="ion-eye"></i></button></li>
+                                        <li><a href="#"><i class="ion-android-cart"></i></a></li>
+                                        <li><a href="#"><i class="ion-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-product-bottom">
+                                    <h6><a href="product-details.html">Air conditioner heat pump</a></h6>
+                                    <span class="tm-product-price">$11.22</span>
+                                    <div class="tm-ratingbox">
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                        <span class="is-active"><i class="ion-ios-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Product -->
+
+                    </div>
+                </div>
+            </div>
+            <!--// Products Area -->
+
+            <!-- Promotion Area -->
+            <div id="tm-promotion-area" class="tm-promotion-area tm-section bg-grey" style="display:none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1">
+                            <div class="tm-promotion-content">
+                                <h2>Hurry Up!<br><span class="color-theme">50%</span> off</h2>
+                                <p>Heating and Air Conditioning Maintenance Services</p>
+                                <div class="tm-countdown" data-countdown="2020/01/12"></div>
+                                <a href="#" class="tm-button">Shop Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 align-self-end">
+                            <div class="tm-promotion-image text-center">
+                                <img src="assets/images/others/promotion-image.png" alt="promotion image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Promotion Area -->
+
+            <!-- Testimonial Area -->
+            <div id="tm-testimonial-area" class="tm-testimonial-area tm-section tm-padding-section bg-white">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="tm-sectiontitle text-center">
+                                <h2>Recomendaciones de clientes</h2>
+                                <span class="tm-sectiontitle-divider">
+                                    <img src="assets/images/icons/icon-section-title-divider.png" alt="divider icon">
+                                </span>
+                               <!----<p>Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad teimpor
+                                    sittem elit inuning ut sed sittem do eiusmod.</p>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10">
+                            <div class="tm-testimonial-slider tm-slider-arrows">
+                                <div class="tm-testimonial text-center">
+                                    <span class="tm-testimonial-quoteicon">
+                                        <img src="assets/images/icons/icon-testimonial-quote.png" alt="quote icon">
+                                    </span>
+                                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus
+                                        tincidunt
+                                        ultrices. Ut quis blandit dolor. Ut laoreet sagittis arcueu
+                                        tristique. Vestibulum ante ipsum primis in faucibus.”</p>
+                                    <div class="tm-testimonial-author">
+                                        <h6>Jordan Durant</h6>
+                                        <p>Printer Operator</p>
+                                    </div>
+                                </div>
+                                <div class="tm-testimonial text-center">
+                                    <span class="tm-testimonial-quoteicon">
+                                        <img src="assets/images/icons/icon-testimonial-quote.png" alt="quote icon">
+                                    </span>
+                                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus
+                                        tincidunt
+                                        ultrices. Ut quis blandit dolor. Ut laoreet sagittis arcueu
+                                        tristique. Vestibulum ante ipsum primis in faucibus.”</p>
+                                    <div class="tm-testimonial-author">
+                                        <h6>Jordan Durant</h6>
+                                        <p>Printer Operator</p>
+                                    </div>
+                                </div>
+                                <div class="tm-testimonial text-center">
+                                    <span class="tm-testimonial-quoteicon">
+                                        <img src="assets/images/icons/icon-testimonial-quote.png" alt="quote icon">
+                                    </span>
+                                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus
+                                        tincidunt
+                                        ultrices. Ut quis blandit dolor. Ut laoreet sagittis arcueu
+                                        tristique. Vestibulum ante ipsum primis in faucibus.”</p>
+                                    <div class="tm-testimonial-author">
+                                        <h6>Jordan Durant</h6>
+                                        <p>Printer Operator</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Testimonial Area -->
+
+            <!-- Newsletter Area -->
+            <div id="tm-newsletter-area" class="tm-newsletter-area tm-section tm-padding-section bg-theme">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-12">
+                            <h2 class="tm-newsletter-title">Newsletter Suscribete</h2>
+                        </div>
+                        <div class="col-lg-6 col-md-9 col-sm-8 col-12">
+                            <form id="tm-mailchimp-form" class="tm-newsletter-form">
+                                <input id="mc-email" type="email" placeholder="Dirección de correo...">
+                                <button id="mc-submit" type="submit" class="tm-button">Suscribirme</button>
+                            </form>
+                            <!-- Mailchimp Alerts -->
+                            <div class="tm-mailchimp-alerts">
+                                <div class="tm-mailchimp-submitting"></div>
+                                <div class="mailchimp-success"></div>
+                                <div class="tm-mailchimp-error"></div>
+                            </div>
+                            <!--// Mailchimp Alerts -->
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+                            <ul class="tm-newsletter-socialicons">
+                                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    
+                                <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                           
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Newsletter Area -->
+
+            <!-- Financing Area -->
+            <div id="tm-financing-area" class="tm-financing-area tm-section tm-padding-section bg-grey" style="display:none">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="tm-sectiontitle text-center">
+                                <h2>Financing Solutions</h2>
+                                <span class="tm-sectiontitle-divider">
+                                    <img src="assets/images/icons/icon-section-title-divider.png" alt="divider icon">
+                                </span>
+                                <p>Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad teimpor
+                                    sittem elit inuning ut sed sittem do eiusmod.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="tm-financing-left">
+                                <h2>What Can You Finance?</h2>
+                                <h6>We provide flexible financing programs to every one of our
+                                    business clients and partners.</h6>
+                                <p>When you get approved for HVAC financing, you have access to the following: </p>
+                                <ul class="stylish-list-color">
+                                    <li><i class="ion-checkmark"></i> Affordable monthly payments</li>
+                                    <li><i class="ion-checkmark"></i> Flexible financing options</li>
+                                    <li><i class="ion-checkmark"></i> Finalize your project needs with Enerhome</li>
+                                    <li><i class="ion-checkmark"></i> Once your credit has been approved</li>
+                                    <li><i class="ion-checkmark"></i> Once you sign and return the original documents
+                                    </li>
+                                    <li><i class="ion-checkmark"></i> Online account management</li>
+                                </ul>
+                                <a href="#" class="tm-button">Apply Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="tm-financing-right">
+                                <h2>Flexible Payment Options</h2>
+                                <p>Our standard financing, you set the term length and monthly payment amount that
+                                    works best for you.</p>
+                                <ul class="stylish-list">
+                                    <li><i class="ion-android-radio-button-on"></i> Low monthly payments</li>
+                                    <li><i class="ion-android-radio-button-on"></i> Zero-interest and deferred payment
+                                        options</li>
+                                    <li><i class="ion-android-radio-button-on"></i> No down payment</li>
+                                    <li><i class="ion-android-radio-button-on"></i> No annual fees</li>
+                                </ul>
+                                <div class="tm-revealblock">
+                                    <img src="assets/images/others/finfancing-image.jpg" alt="financing image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Financing Area -->
+
+            <!-- Pricing Plan -->
+            <div id="tm-pricing-area" class="tm-pricing-plan tm-section tm-padding-section bg-white" style="display:none">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="tm-sectiontitle text-center">
+                                <h2>Planes de precios para mantenimiento</h2>
+                                <span class="tm-sectiontitle-divider">
+                                    <img src="assets/images/icons/icon-section-title-divider.png" alt="divider icon">
+                                </span>
+                                <p>Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad teimpor
+                                    sittem elit inuning ut sed sittem do eiusmod.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-30-reverse justify-content-center">
+
+                        <!-- Single Pricebox -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-30">
+                            <div class="tm-pricebox text-center tm-revealblock">
+                                <h5 class="tm-pricebox-title">Standard</h5>
+                                <div class="tm-pricebox-price">
+                                    <h2>$129</h2>
+                                    <p>Per Year</p>
+                                </div>
+                                <ul>
+                                    <li>Yearly Maintenance</li>
+                                    <li>Automatic Service Reminders</li>
+                                    <li>Cleaning All Parts</li>
+                                </ul>
+                                <a href="#" class="tm-button tm-button-white">Book Now</a>
+                            </div>
+                        </div>
+                        <!--// Single Pricebox -->
+
+                        <!-- Single Pricebox -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-30">
+                            <div class="tm-pricebox text-center tm-revealblock is-active">
+                                <h5 class="tm-pricebox-title">Basic</h5>
+                                <div class="tm-pricebox-price">
+                                    <h2>$159</h2>
+                                    <p>Per Year</p>
+                                </div>
+                                <ul>
+                                    <li>Yearly Maintenance</li>
+                                    <li>Automatic Service Reminders</li>
+                                    <li>Cleaning All Parts</li>
+                                </ul>
+                                <a href="#" class="tm-button tm-button-white">Book Now</a>
+                            </div>
+                        </div>
+                        <!--// Single Pricebox -->
+
+                        <!-- Single Pricebox -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-30">
+                            <div class="tm-pricebox text-center tm-revealblock">
+                                <h5 class="tm-pricebox-title">Deluxe</h5>
+                                <div class="tm-pricebox-price">
+                                    <h2>$199</h2>
+                                    <p>Per Year</p>
+                                </div>
+                                <ul>
+                                    <li>Yearly Maintenance</li>
+                                    <li>Automatic Service Reminders</li>
+                                    <li>Cleaning All Parts</li>
+                                </ul>
+                                <a href="#" class="tm-button tm-button-white">Book Now</a>
+                            </div>
+                        </div>
+                        <!--// Single Pricebox -->
+
+                    </div>
+                </div>
+            </div>
+            <!--// Pricing Plan -->
+
+            <!-- Faq Area -->
+            <div id="tm-faq-area" class="tm-question-area tm-section tm-padding-section bg-grey">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="tm-question-left tm-revealblock">
+                                <div class="tm-faq-images tm-slider-dots tm-revealblock">
+                                    <img src="assets/images/others/about-image-1.jpg" alt="about image">
+                                    <img src="assets/images/others/about-image-2.jpg" alt="about image">
+                                    <img src="assets/images/others/about-image-3.jpg" alt="about image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="tm-question-right">
+                                <h2>Preguntas Frecuentes</h2>
+
+                                <!-- Accordion -->
+                                <div id="tm-accordion" class="tm-accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    ¿Cuáles son los beneficios de mantener mi sistema de aire 
+                                                    acondicionado con un programa de mantenimiento regular?
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#tm-accordion">
+                                            <div class="card-body">
+                                                <p>Mantener tu sistema de aire acondicionado con un programa de mantenimiento 
+                                                    regular ofrece varios beneficios. Ayuda a prolongar la vida útil de tus equipos, 
+                                                    optimiza la eficiencia energética, reduce el riesgo de averías costosas y 
+                                                    garantiza un rendimiento constante para mantener un ambiente cómodo en tu hogar u oficina.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    ¿Por qué es importante contar con un sistema de calefacción eficiente en mi hogar?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#tm-accordion">
+                                            <div class="card-body">
+                                                <p>Un sistema de calefacción eficiente es esencial para mantener el confort en tu hogar durante los meses fríos. 
+                                                    No solo te proporciona un ambiente cálido y acogedor, sino que también puede ayudarte 
+                                                    a reducir los costos de energía al utilizar menos combustible 
+                                                    para mantener una temperatura confortable.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    ¿Cuál es la ventaja de elegir una instalación de gas estacionario para mi hogar en comparación con otras opciones?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#tm-accordion">
+                                            <div class="card-body">
+                                                <p>Optar por una instalación de gas estacionario ofrece varias ventajas. 
+                                                    Proporciona un suministro constante de gas para tus necesidades diarias, 
+                                                    lo que elimina la dependencia de cilindros de gas individuales. 
+                                                    Además, es más conveniente y seguro, ya que no es necesario cambiar 
+                                                    cilindros con frecuencia y reduce el riesgo de fugas.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseFour" aria-expanded="false"
+                                                    aria-controls="collapseFour">
+                                                    ¿Cómo puede un calentador de agua eficiente ayudarme a ahorrar en mis facturas de servicios públicos?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                            data-parent="#tm-accordion">
+                                            <div class="card-body">
+                                                <p>Un calentador de agua eficiente consume menos energía para calentar el agua, lo que se traduce en ahorros 
+                                                    significativos en tus facturas de servicios públicos a lo largo del tiempo. 
+                                                    La tecnología moderna de los calentadores de agua permite un calentamiento rápido y preciso, 
+                                                    lo que significa que no tendrás que esperar mucho tiempo para disfrutar de agua caliente, 
+                                                    optimizando aún más tu consumo energético.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// Accordion -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Faq Area -->
+
+            <!-- Call To Action -->
+            <div id="tm-calltoaction-area" class="tm-cta-area tm-section tm-padding-section" data-overlay="4"
+            data-bgimage="assets/images/bg/bg-cta.jpg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10 col-lg-12 col-md-10">
+                            <div class="tm-cta text-center">
+                                <h2>¿Aire acondicionado que necesita su hogar?</h2>
+                                <h4><i class="ion-phone"></i> Llamanos: <a href="tel:+18009156270">2881209736</a></h4>
+                                <h4>O descarga la app</h4>
+                                <a href="https://play.google.com/store/apps/details?id=aires.tsh.mx" target="_blank" class="tm-button tm-button-white hash-scroll-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="currentColor" d="M48 59.49v393a4.33 4.33 0 0 0 7.37 3.07L260 256L55.37 56.42A4.33 4.33 0 0 0 48 59.49ZM345.8 174L89.22 32.64l-.16-.09c-4.42-2.4-8.62 3.58-5 7.06l201.13 192.32ZM84.08 472.39c-3.64 3.48.56 9.46 5 7.06l.16-.09L345.8 338l-60.61-57.95ZM449.38 231l-71.65-39.46L310.36 256l67.37 64.43L449.38 281c19.49-10.77 19.49-39.23 0-50Z"/></svg>
+                                    Aires TS
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Call To Action -->
+
+            <!-- Team Area -->
+            <div id="tm-team-area" class="tm-member-area tm-section tm-padding-section bg-white">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="tm-sectiontitle text-center">
+                                <h2>Nuestros Profesionales</h2>
+                                <span class="tm-sectiontitle-divider">
+                                    <img src="assets/images/icons/icon-section-title-divider.png" alt="divider icon">
+                                </span>
+                                <!--<p>Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad teimpor
+                                    sittem elit inuning ut sed sittem do eiusmod.</p>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row tm-member-slider tm-slider-dots-2">
+
+                        <!-- Single Member -->
+                        <div class="col-lg-4">
+                            <div class="tm-member text-center">
+                                <img src="assets/images/team/avatar2.png" alt="team member">
+                                <div class="tm-member-content">
+                                    <h5>Brian Bader</h5>
+                                    <p>Engineer</p>
+                                    <ul class="tm-member-social">
+                                        <li class="facebook"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                        <li class="twitter"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                        <li class="instagram"><a href="#"><i
+                                                    class="ion-social-instagram-outline"></i></a></li>
+                                        <li class="pinterest"><a href="#"><i
+                                                    class="ion-social-pinterest-outline"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Member -->
+
+                        <!-- Single Member -->
+                        <div class="col-lg-4">
+                            <div class="tm-member text-center">
+                                <img src="assets/images/team/avatar2.png" alt="team member">
+                                <div class="tm-member-content">
+                                    <h5>Gerald Jackson</h5>
+                                    <p>Machine operator</p>
+                                    <ul class="tm-member-social">
+                                        <li class="facebook"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                        <li class="twitter"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                        <li class="instagram"><a href="#"><i
+                                                    class="ion-social-instagram-outline"></i></a></li>
+                                        <li class="pinterest"><a href="#"><i
+                                                    class="ion-social-pinterest-outline"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Member -->
+
+                        <!-- Single Member -->
+                        <div class="col-lg-4">
+                            <div class="tm-member text-center">
+                                <img src="assets/images/team/avatar2.png" alt="team member">
+                                <div class="tm-member-content">
+                                    <h5>Peter Harrison</h5>
+                                    <p>Clinical manager</p>
+                                    <ul class="tm-member-social">
+                                        <li class="facebook"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                        <li class="twitter"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                        <li class="instagram"><a href="#"><i
+                                                    class="ion-social-instagram-outline"></i></a></li>
+                                        <li class="pinterest"><a href="#"><i
+                                                    class="ion-social-pinterest-outline"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Member -->
+
+                        <!-- Single Member -->
+                        <div class="col-lg-4">
+                            <div class="tm-member text-center">
+                                <img src="assets/images/team/avatar2.png" alt="team member">
+                                <div class="tm-member-content">
+                                    <h5>Brian Bader</h5>
+                                    <p>Engineer</p>
+                                    <ul class="tm-member-social">
+                                        <li class="facebook"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                        <li class="twitter"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                        <li class="instagram"><a href="#"><i
+                                                    class="ion-social-instagram-outline"></i></a></li>
+                                        <li class="pinterest"><a href="#"><i
+                                                    class="ion-social-pinterest-outline"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Member -->
+
+                        <!-- Single Member -->
+                        <div class="col-lg-4">
+                            <div class="tm-member text-center">
+                                <img src="assets/images/team/avatar2.png" alt="team member">
+                                <div class="tm-member-content">
+                                    <h5>Gerald Jackson</h5>
+                                    <p>Machine operator</p>
+                                    <ul class="tm-member-social">
+                                        <li class="facebook"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                        <li class="twitter"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                        <li class="instagram"><a href="#"><i
+                                                    class="ion-social-instagram-outline"></i></a></li>
+                                        <li class="pinterest"><a href="#"><i
+                                                    class="ion-social-pinterest-outline"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Member -->
+
+                        <!-- Single Member -->
+                        <div class="col-lg-4">
+                            <div class="tm-member text-center">
+                                <img src="assets/images/team/avatar2.png" alt="team member">
+                                <div class="tm-member-content">
+                                    <h5>Peter Harrison</h5>
+                                    <p>Clinical manager</p>
+                                    <ul class="tm-member-social">
+                                        <li class="facebook"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                        <li class="twitter"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                        <li class="instagram"><a href="#"><i
+                                                    class="ion-social-instagram-outline"></i></a></li>
+                                        <li class="pinterest"><a href="#"><i
+                                                    class="ion-social-pinterest-outline"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Member -->
+
+                    </div>
+                </div>
+            </div>
+            <!--// Team Area -->
+
+            <!-- Blogs Area -->
+            <div id="tm-blogs-area" class="tm-blog-area tm-section tm-padding-section bg-grey" style="display:none">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="tm-sectiontitle text-center">
+                                <h2>Ultima publicacion del blog</h2>
+                                <span class="tm-sectiontitle-divider">
+                                    <img src="assets/images/icons/icon-section-title-divider.png" alt="divider icon">
+                                </span>
+                                <p>Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad teimpor
+                                    sittem elit inuning ut sed sittem do eiusmod.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row blog-slider-active tm-slider-dots-2">
+
+                        <!-- Single Blog -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="tm-blog">
+                                <div class="tm-blog-topside tm-revealblock">
+                                    <img src="assets/images/blog/blog-image-1.jpg" alt="blog image">
+                                    <a href="blog-details.html"><i class="ion-link"></i></a>
+                                </div>
+                                <div class="tm-blog-bottomside">
+                                    <div class="tm-blog-tags">
+                                        <span>By: <a href="blog.html">Admin</a></span>
+                                        <span>Jan 08, 2019</span>
+                                        <span><a href="blog-details.html">Comment: (2)</a></span>
+                                    </div>
+                                    <h6><a href="blog-details.html">Will your A/C make it through summer?</a></h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipis
+                                        cing elit. Aenean cursus tincidunt ultrices.
+                                        Utquis blandit dolor. </p>
+                                    <a href="https://play.google.com/store/apps/details?id=aires.tsh.mx" target="_blank"  class="tm-readmore"> Aires TS App<i
+                                            class="ion-arrow-right-c"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Blog -->
+
+                        <!-- Single Blog -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="tm-blog">
+                                <div class="tm-blog-topside tm-revealblock">
+                                    <img src="assets/images/blog/blog-image-2.jpg" alt="blog image">
+                                    <a href="blog-details.html"><i class="ion-link"></i></a>
+                                </div>
+                                <div class="tm-blog-bottomside">
+                                    <div class="tm-blog-tags">
+                                        <span>By: <a href="blog.html">Admin</a></span>
+                                        <span>Jan 08, 2019</span>
+                                        <span><a href="blog-details.html">Comment: (2)</a></span>
+                                    </div>
+                                    <h6><a href="blog-details.html">Will your A/C make it through summer?</a></h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipis
+                                        cing elit. Aenean cursus tincidunt ultrices.
+                                        Utquis blandit dolor. </p>
+                                    <a href="https://play.google.com/store/apps/details?id=aires.tsh.mx" class="tm-readmore">Aires TS App<i
+                                            class="ion-arrow-right-c"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Blog -->
+
+                        <!-- Single Blog -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="tm-blog">
+                                <div class="tm-blog-topside tm-revealblock">
+                                    <img src="assets/images/blog/blog-image-3.jpg" alt="blog image">
+                                    <a href="blog-details.html"><i class="ion-link"></i></a>
+                                </div>
+                                <div class="tm-blog-bottomside">
+                                    <div class="tm-blog-tags">
+                                        <span>By: <a href="blog.html">Admin</a></span>
+                                        <span>Jan 08, 2019</span>
+                                        <span><a href="blog-details.html">Comment: (2)</a></span>
+                                    </div>
+                                    <h6><a href="blog-details.html">Will your A/C make it through summer?</a></h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipis
+                                        cing elit. Aenean cursus tincidunt ultrices.
+                                        Utquis blandit dolor. </p>
+                                    <a href="blog-details.html" class="tm-readmore">Read more <i
+                                            class="ion-arrow-right-c"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Blog -->
+
+                        <!-- Single Blog -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="tm-blog">
+                                <div class="tm-blog-topside tm-revealblock">
+                                    <img src="assets/images/blog/blog-image-1.jpg" alt="blog image">
+                                    <a href="blog-details.html"><i class="ion-link"></i></a>
+                                </div>
+                                <div class="tm-blog-bottomside">
+                                    <div class="tm-blog-tags">
+                                        <span>By: <a href="blog.html">Admin</a></span>
+                                        <span>Jan 08, 2019</span>
+                                        <span><a href="blog-details.html">Comment: (2)</a></span>
+                                    </div>
+                                    <h6><a href="blog-details.html">Will your A/C make it through summer?</a></h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipis
+                                        cing elit. Aeneanblog-details.htmlcursus tincidunt ultrices.
+                                        Utquis blandit dolor. </p>
+                                    <a href="blog-details.html" class="tm-readmore">Read more <i
+                                            class="ion-arrow-right-c"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Blog -->
+
+                        <!-- Single Blog -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="tm-blog">
+                                <div class="tm-blog-topside tm-revealblock">
+                                    <img src="assets/images/blog/blog-image-2.jpg" alt="blog image">
+                                    <a href="blog-details.html"><i class="ion-link"></i></a>
+                                </div>
+                                <div class="tm-blog-bottomside">
+                                    <div class="tm-blog-tags">
+                                        <span>By: <a href="blog.html">Admin</a></span>
+                                        <span>Jan 08, 2019</span>
+                                        <span><a href="blog-details.html">Comment: (2)</a></span>
+                                    </div>
+                                    <h6><a href="blog-details.html">Will your A/C make it through summer?</a></h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipis
+                                        cing elit. Aenean cursus tincidunt ultrices.
+                                        Utquis blandit dolor. </p>
+                                    <a href="blog-details.html" class="tm-readmore">Read more <i
+                                            class="ion-arrow-right-c"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Blog -->
+
+                        <!-- Single Blog -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="tm-blog">
+                                <div class="tm-blog-topside tm-revealblock">
+                                    <img src="assets/images/blog/blog-image-3.jpg" alt="blog image">
+                                    <a href="blog-details.html"><i class="ion-link"></i></a>
+                                </div>
+                                <div class="tm-blog-bottomside">
+                                    <div class="tm-blog-tags">
+                                        <span>By: <a href="blog.html">Admin</a></span>
+                                        <span>Jan 08, 2019</span>
+                                        <span><a href="blog-details.html">Comment: (2)</a></span>
+                                    </div>
+                                    <h6><a href="blog-details.html">Will your A/C make it through summer?</a></h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipis
+                                        cing elit. Aenean cursus tincidunt ultrices.
+                                        Utquis blandit dolor. </p>
+                                    <a href="blog-details.html" class="tm-readmore">Read more <i
+                                            class="ion-arrow-right-c"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Blog -->
+
+                    </div>
+                </div>
+            </div>
+            <!--// Blogs Area -->
+
+            <!-- Call To Action -->
+            <div id="tm-calltoaction-area-2" class="tm-cta-2-area tm-section tm-padding-section bg-theme">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-8">
+                            <div class="tm-cta tm-cta-2 text-center">
+                                <h2>Oportunidades de empleo</h2>
+                                <h5> Si buscas una oportunidad para crecer, aprender y contribuir en un entorno dinámico, ¡te invitamos a unirte a nosotros!</h5>
+                                <span class="mail-btn"><a href="mailto:aires.tsh@gmail.com">aires.tsh@gmail.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Call To Action -->
+
+            <!-- Brand Logos -->
+            <div class="tm-brandlogo-area tm-section tm-padding-section bg-grey">
+                <div class="container">
+                    <div class="tm-brandlogo-slider">
+
+                        <!-- Brang Logo Single -->
+                        <div class="tm-brandlogo">
+                            <a href="#">
+                                <img src="assets/images/brandlogo/brandlogo-1.png" alt="brand-logo">
+                            </a>
+                        </div>
+                        <!--// Brang Logo Single -->
+
+                        <!-- Brang Logo Single -->
+                        <div class="tm-brandlogo">
+                            <a href="#">
+                                <img src="assets/images/brandlogo/brandlogo-2.png" alt="brand-logo">
+                            </a>
+                        </div>
+                        <!--// Brang Logo Single -->
+
+                        <!-- Brang Logo Single -->
+                        <div class="tm-brandlogo">
+                            <a href="#">
+                                <img src="assets/images/brandlogo/brandlogo-3.png" alt="brand-logo">
+                            </a>
+                        </div>
+                        <!--// Brang Logo Single -->
+
+                        <!-- Brang Logo Single -->
+                        <div class="tm-brandlogo">
+                            <a href="#">
+                                <img src="assets/images/brandlogo/brandlogo-4.png" alt="brand-logo">
+                            </a>
+                        </div>
+                        <!--// Brang Logo Single -->
+
+                        <!-- Brang Logo Single -->
+                        <div class="tm-brandlogo">
+                            <a href="#">
+                                <img src="assets/images/brandlogo/brandlogo-5.png" alt="brand-logo">
+                            </a>
+                        </div>
+                        <!--// Brang Logo Single -->
+
+                        <!-- Brang Logo Single -->
+                        <div class="tm-brandlogo">
+                            <a href="#">
+                                <img src="assets/images/brandlogo/brandlogo-1.png" alt="brand-logo">
+                            </a>
+                        </div>
+                        <!--// Brang Logo Single -->
+
+                        <!-- Brang Logo Single -->
+                        <div class="tm-brandlogo">
+                            <a href="#">
+                                <img src="assets/images/brandlogo/brandlogo-2.png" alt="brand-logo">
+                            </a>
+                        </div>
+                        <!--// Brang Logo Single -->
+
+                        <!-- Brang Logo Single -->
+                        <div class="tm-brandlogo">
+                            <a href="#">
+                                <img src="assets/images/brandlogo/brandlogo-3.png" alt="brand-logo">
+                            </a>
+                        </div>
+                        <!--// Brang Logo Single -->
+
+                        <!-- Brang Logo Single -->
+                        <div class="tm-brandlogo">
+                            <a href="#">
+                                <img src="assets/images/brandlogo/brandlogo-4.png" alt="brand-logo">
+                            </a>
+                        </div>
+                        <!--// Brang Logo Single -->
+
+                        <!-- Brang Logo Single -->
+                        <div class="tm-brandlogo">
+                            <a href="#">
+                                <img src="assets/images/brandlogo/brandlogo-5.png" alt="brand-logo">
+                            </a>
+                        </div>
+                        <!--// Brang Logo Single -->
+
+                    </div>
+                </div>
+            </div>
+            <!--// Brand Logos -->
+
+            <!-- Contact Area -->
+            <div id="tm-contact-area" class="tm-contact-area tm-section tm-padding-section bg-white">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="tm-sectiontitle text-center">
+                                <h2>Contactanos</h2>
+                                <span class="tm-sectiontitle-divider">
+                                    <img src="assets/images/icons/icon-section-title-divider.png" alt="divider icon">
+                                </span>
+                                <!--<p>Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad teimpor
+                                    sittem elit inuning ut sed sittem do eiusmod.</p>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div  class="google-map" style="z-index: 3;">
+
+                    <div id="map" style="z-index: 3;"></div>
+
+                </div>
+
+             
+                   
+
+                <div class="tm-contact-top" style="z-index: 999999; position: inherit;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <!-- Single Block -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-30">
+                                <div class="tm-contact-block text-center tm-revealblock">
+                                    <span class="tm-contact-block-icon">
+                                        <img src="assets/images/icons/icon-contact-address.png" alt="icon">
+                                    </span>
+                                    <div class="tm-contact-block-content">
+                                        <h5>Dirección</h5>
+                                        <p>Salvador Diaz Miron, Veracruz, Mexico.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Single Block -->
+
+                            <!-- Single Block -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-30">
+                                <div class="tm-contact-block text-center tm-revealblock">
+                                    <span class="tm-contact-block-icon">
+                                        <img src="assets/images/icons/icon-contact-call.png" alt="icon">
+                                    </span>
+                                    <div class="tm-contact-block-content">
+                                        <h5>Phone</h5>
+                                        <p><a href="tel:+522881209736">2881209736</a></p>
+                              
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Single Block -->
+
+                            <!-- Single Block -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-30">
+                                <div class="tm-contact-block text-center tm-revealblock">
+                                    <span class="tm-contact-block-icon">
+                                        <img src="assets/images/icons/icon-contact-email.png" alt="icon">
+                                    </span>
+                                    <div class="tm-contact-block-content">
+                                        <h5>Email</h5>
+                                        <p>Email: <a href="mailto:aires.tsh@gmail.com">aires.tsh@gmail.com</a></p>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Single Block -->
+                        </div>
+                    </div>
+                </div>
+
+           
+
+            </div>
+            <!--// Contact Area -->
+
+        </main>
+        <!--// Main Content -->
+
+        <!-- Footer -->
+        <footer class="tm-footer" style="background-image: url(assets/images/bg/foot.jpg)!important;">
+
+            <!-- Footer Top Area -->
+            <div class="tm-footer-topside tm-padding-section "
+               >
+                <div class="container">
+                    <div class="widgets widgets-footer row">
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-info">
+                                <a class="widget-info-logo" href="index.html"><img
+                                        src="assets/images/logo/logo-white.png" alt="white logo"></a>
+                                <p>Lorem ipsum dolor sit amet, consect adipisicing elit, sed do eiusmod tempor
+                                    inci-didunt. It is a long established fact that a reader distracted.</p>
+                                <ul>
+                                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                    <!--<li><a href="#"><i class="ion-social-twitter"></i></a></li>-->
+                                    <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                                    <!--<li><a href="#"><i class="ion-social-pinterest-outline"></i></a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-quicklinks">
+                                <h4 class="widget-title">Servicios</h4>
+                                <ul>
+                                    <li><a href="#">Instalación de aire acondicionado</a></li>
+                                    <li><a href="#">Mantenimiento de aire acondicionado</a></li>
+                                    <li><a href="#">Instalación de calentador</a></li>
+                                    <li><a href="#">Otros</a></li>
+                          
+                                </ul>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-hours">
+                                <h4 class="widget-title">Horario</h4>
+                                <p>Nuestros horarios de atención</p>
+                                <ul>
+                                    <li><span>Lun - Mié</span>: 9.00 AM - 18.00 PM</li>
+                                    <li><span>Jue - Vie</span>: 8.00 AM - 17.00 PM</li>
+                                    <li><span>Sabado</span>: 9.00 PM - 15.00 PM</li>
+                                    <li><span>Domingo</span>: Cerrado</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-recentpost-2">
+                                <h4 class="widget-title">Nuestra App</h4>
+                                <center>
+                               <img src="assets/images/QR.png" width="170px">
+                            </center>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--// Footer Top Area -->
+
+            <!-- Footer Bottom Area -->
+            <div class="tm-footer-bottomside">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <p class="tm-footer-copyright">&copy; 2023. <a
+                                    href="https://blapeer.blogspot.com/">Blapeer</a></p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="tm-footer-paymentmethod">
+                                <img src="assets/images/icons/payment-methods.png" alt="payment methods">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Footer Bottom Area -->
+
+        </footer>
+        <!--// Footer -->
+
+        <!-- Search Form -->
+        <div class="tm-searchform">
+            <button class="tm-searchform-close">
+                <i class="ion-android-close"></i>
+            </button>
+            <form action="#">
+                <input type="text" placeholder="Search keyword...">
+                <button type="submit"><i class="ion-android-search"></i></button>
+            </form>
+        </div>
+        <!--// Search Form -->
+
+        <!-- Product Quickview -->
+        <div class="tm-product-quickview" id="tm-product-quickview">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-9 col-lg-10 col-12">
+                        <div class="tm-product-quickview-inner">
+                            <!-- Product Details -->
+                            <div class="tm-prodetails">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-10 col-12">
+
+                                        <!-- Product Details Images -->
+                                        <div class="tm-prodetails-images">
+                                            <div class="tm-prodetails-largeimages">
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img src="assets/images/products/product-image-1.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img src="assets/images/products/product-image-2.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img src="assets/images/products/product-image-3.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img src="assets/images/products/product-image-4.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img src="assets/images/products/product-image-2.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img src="assets/images/products/product-image-3.jpg"
+                                                        alt="product image">
+                                                </div>
+                                            </div>
+                                            <div class="tm-prodetails-thumbnails">
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img src="assets/images/products/thumbnail/product-image-1.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img src="assets/images/products/thumbnail/product-image-2.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img src="assets/images/products/thumbnail/product-image-3.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img src="assets/images/products/thumbnail/product-image-4.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img src="assets/images/products/thumbnail/product-image-2.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img src="assets/images/products/thumbnail/product-image-3.jpg"
+                                                        alt="product image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--// Product Details Images -->
+
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="tm-prodetails-content">
+                                            <h3 class="tm-prodetails-title">Industry air ventilation</h3>
+                                            <div class="tm-ratingbox">
+                                                <span class="is-active"><i class="ion-ios-star"></i></span>
+                                                <span class="is-active"><i class="ion-ios-star"></i></span>
+                                                <span class="is-active"><i class="ion-ios-star"></i></span>
+                                                <span class="is-active"><i class="ion-ios-star"></i></span>
+                                                <span class="is-active"><i class="ion-ios-star"></i></span>
+                                            </div>
+                                            <p class="tm-prodetails-availability">Availalbe: <span>In Stock</span></p>
+                                            <div class="tm-prodetails-price">
+                                                <span><del>$75.99</del> $59.99</span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mi
+                                                dolor,
+                                                malesuada id metus a, mattis eleifend elit. Nullam pharetra
+                                                consequat ex in dapibus. Vestibulum ante.</p>
+                                            <div class="tm-prodetails-quantitycart">
+                                                <div class="tm-quantitybox">
+                                                    <input type="text" value="1">
+                                                </div>
+                                                <a href="#" class="tm-button tm-button-dark">Add To Cart<b></b></a>
+                                            </div>
+
+                                            <div class="tm-prodetails-categories">
+                                                <h6>Categories :</h6>
+                                                <ul>
+                                                    <li><a href="shop.html">Repair</a></li>
+                                                    <li><a href="shop.html">Tools</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="tm-prodetails-tags">
+                                                <h6>Tags :</h6>
+                                                <ul>
+                                                    <li><a href="shop.html">Electronic</a></li>
+                                                    <li><a href="shop.html">Repair Tools</a></li>
+                                                    <li><a href="shop.html">Best</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="tm-prodetails-share">
+                                            <h6>Share :</h6>
+                                            <ul>
+                                                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                                <li><a href="#"><i class="ion-social-instagram-outline"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="ion-social-pinterest-outline"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Product Details -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Product Quickview -->
+
+        <button id="back-top-top"><i class="ion-ios-arrow-thin-up"></i></button>
+
+    </div>
+    <!--// Wrapper -->
+
+    <script>
+        var map = L.map('map').setView([19.1065037, -96.1160289], 13);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 30,
+        attribution: '© OpenStreetMap'
+        }).addTo(map);
+        var marker = L.marker([19.164776765163055, -96.11309106553324]).addTo(map);
+        marker.bindPopup("<b>Encuentranos aqui!</b><br>Aires Troubleshooting.").openPopup();
+    </script>
+
+
+    <!-- Js Files -->
+    <script src="assets/js/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    
+
+</body>
+
+</html>
